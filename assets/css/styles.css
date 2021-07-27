@@ -2651,9 +2651,65 @@ BLOG Pagination
 
 /*# sourceMappingURL=styles.css.map */
 
-.mh-project-gallery.portfolioContainer.card .card-title .title-icon {
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  }
+  .cards .card {
+    background-image: url(../images/map-color-overlay.png);
+    width: 100%;
+    margin: 1rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px 4px #00000015;
+  }
+  
+  .cards .card .card-title {
+    
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  }
+  .cards .card .card-title .title-icon {
   width: 2rem;
   height: 2rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
+  }
+  
+  .container .cards .card .card-content .card-content-title {
+  color: #6d6a7c;
+  margin: 0.7rem 0;
+  }
+  .cards .card .card-content .card-content-text {
+  color: #6d6a7c;
+  }
+  .cards .card .mycard-footer {
+  margin: 1rem 0 2rem;
+  padding: 0.5rem 0 1rem;
+  line-height: 2;
+  margin-bottom: 0;
+  background-color: #fff;
+  text-decoration: none;
+  }
+  .cards .card .mycard-footer a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.5rem;
+  color: #6d6a7c;
+  font-size: 0.66rem;
+  border: 3px solid #6e57e0;
+  border-radius: 2rem;
+  padding: 0.2rem 0.85rem 0.25rem;
+  position: relative;
+  }
