@@ -2651,7 +2651,7 @@ BLOG Pagination
 
 /*# sourceMappingURL=styles.css.map */
 
-.cards {
+.mycards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2661,9 +2661,9 @@ BLOG Pagination
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   }
-  .cards .card {
+  .mycards .mycard {
     background-image: url(../images/map-color-overlay.png);
-    width: 100%;
+    width: 370px;
     margin: 1rem;
     background-color: #fff;
     padding: 2rem;
@@ -2671,7 +2671,7 @@ BLOG Pagination
     box-shadow: 0px 10px 20px 4px #00000015;
   }
   
-  .cards .card .card-title {
+  .mycards .mycard .mycard-title {
     
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2680,21 +2680,22 @@ BLOG Pagination
       -ms-flex-pack: justify;
           justify-content: space-between;
   }
-  .cards .card .card-title .title-icon {
+  .mycards .mycard .mycard-title .fa {
+    float: right;
   width: 2rem;
   height: 2rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   }
   
-  .container .cards .card .card-content .card-content-title {
+  .container .mycards .mycard .mycard-content .mycard-content-title {
   color: #6d6a7c;
   margin: 0.7rem 0;
   }
-  .cards .card .card-content .card-content-text {
+  .mycards .mycard .mycard-content .mycard-content-text {
   color: #6d6a7c;
   }
-  .cards .card .mycard-footer {
+  .mycards .mycard .mycard-footer {
   margin: 1rem 0 2rem;
   padding: 0.5rem 0 1rem;
   line-height: 2;
@@ -2702,7 +2703,7 @@ BLOG Pagination
   background-color: #fff;
   text-decoration: none;
   }
-  .cards .card .mycard-footer a {
+  .mycards .mycard .mycard-footer a {
   font-style: normal;
   font-weight: 700;
   font-size: 0.5rem;
