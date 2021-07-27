@@ -499,6 +499,11 @@
 
   .text-left.text-xs-center {
     text-align: center !important; } }
+  .text-left.text-xs-center .copy{
+    text-align: center !important;
+    padding-top: 90px;
+    margin-bottom: 0;
+  }
 @media only screen and (max-width: 420px) {
   .mh-home .img-border {
     height: 280px;
