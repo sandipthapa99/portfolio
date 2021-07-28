@@ -36,7 +36,7 @@
    
     /*
     |====================
-    | Mobile NAv trigger
+    | Mobile Nav trigger
     |=====================
     */
     
