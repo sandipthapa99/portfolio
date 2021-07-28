@@ -298,7 +298,9 @@
 
   .mh-xs-mobile-nav .navbar-nav {
     padding-top: 50px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+  
+  }
 @media only screen and (max-width: 768px) {
   .mh-blog .mh-blog-item {
     text-align: center; }
@@ -380,7 +382,8 @@
 
   .mh-blog .mh-blog-item .blog-inner {
     text-align: right;
-    padding: 0 12px; } }
+    padding: 0 12px; }
+   }
 @media only screen and (max-width: 575px) {
   .xs-column-reverse {
     display: flex;
