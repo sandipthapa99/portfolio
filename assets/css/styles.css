@@ -211,36 +211,6 @@ a:focus {
  * --------------------------------------
  */
 
-.section-video {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    min-height: 100%;
-    min-width: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.section-video .bgvid {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    min-width: 100%;
-    background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-}
-
-.body-video-bg>.section-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
 .section-title {
     text-align: center;
 }
@@ -389,11 +359,10 @@ section {
     background-color: transparent;
 }
 
-
-/* .btn.white-btn-border {
+.btn.white-btn-border {
     background-color: transparent;
     border-color: #fff;
-} */
+}
 
 .btn.btn-round {
     padding: 15px;
@@ -406,62 +375,6 @@ section {
 
 .btn.btn-round .icon {
     top: 7px;
-}
-
-.btn.apple,
-.btn.androad {
-    -webkit-border-radius: 3px !important;
-    -moz-border-radius: 3px !important;
-    border-radius: 3px !important;
-    padding: 9px 28px;
-    height: 82px;
-}
-
-.btn.apple img,
-.btn.androad img {
-    width: 35px;
-    height: 100%;
-    float: left;
-}
-
-.btn.apple .icon,
-.btn.androad .icon {
-    font-size: 60px;
-    float: left;
-}
-
-.btn.apple span,
-.btn.androad span {
-    display: block;
-    -moz-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-}
-
-.btn.apple .group,
-.btn.androad .group {
-    float: right;
-}
-
-.btn.apple .big,
-.btn.apple .small,
-.btn.androad .big,
-.btn.androad .small {
-    text-align: left;
-    margin-left: 7px;
-    line-height: 30px;
-}
-
-.btn.apple .big,
-.btn.androad .big {
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.btn.apple .small,
-.btn.androad .small {
-    font-size: 16px;
 }
 
 .btn.active.focus,
@@ -510,60 +423,6 @@ section {
 
 .social-icon li:last-child a {
     margin-right: 0px;
-}
-
-
-/**
- * -----------------------------------
- * Subscription and contact  "MESSAGE"
- * -----------------------------------
- */
-
-.subscription-success,
-.subscription-failed,
-.email-success,
-.email-failed,
-.email-loading {
-    font-size: 15px;
-    display: none;
-    text-align: center !important;
-    padding: 10px !important;
-}
-
-.email-loading {
-    color: #52B8FF;
-}
-
-.email-loading img {
-    width: 15px;
-    position: relative;
-    top: -2px;
-}
-
-.subscription-failed,
-.email-failed {
-    color: #FF5252 !important;
-}
-
-.subscription-failed .icon,
-.email-failed .icon {
-    font-size: 20px;
-    position: relative;
-    top: 5px;
-}
-
-.subscription-success,
-.email-success {
-    color: #56CC35;
-}
-
-.subscription-failed .icon,
-.email-failed .icon,
-.subscription-success .icon,
-.email-success .icon {
-    font-size: 20px;
-    position: relative;
-    top: 5px;
 }
 
 
@@ -1384,7 +1243,7 @@ body {
 }
 
 .home-padding {
-    padding: 150px 0;
+    padding: 100px 0;
 }
 
 
@@ -1942,7 +1801,7 @@ body {
 
 .mh-portfolio-modal-img img {
     margin-bottom: 20px;
-    padding-top: 8%;
+    /* padding-top: 8%; */
     border-radius: 20px;
     box-shadow: 0px 10px 20px 4px #00000015;
 }
@@ -3645,9 +3504,6 @@ BLOG Pagination
     line-height: 30px;
     margin-bottom: 30px;
 }
-
-
-/*# sourceMappingURL=styles.css.map */
 
 .mycards {
     display: -webkit-box;
