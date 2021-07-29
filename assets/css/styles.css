@@ -1743,6 +1743,7 @@ body {
 }
 
 .portfolio-nav ul li {
+    line-height: 3;
     display: inline-block;
     margin: 0 10px;
     cursor: pointer;
