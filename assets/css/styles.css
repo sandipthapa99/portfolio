@@ -3366,6 +3366,7 @@ body {
     padding: 20px;
     border-radius: 1rem;
     height: 16rem;
+    background-image: url(../images/map-color-overlay.png);
 }
 
 .mh-service .mh-service-item .fa {
