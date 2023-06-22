@@ -1764,7 +1764,7 @@ body {
 
 .mh-portfolio-modal-inner {
     max-height: 500px;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin-right: 20px;
 }
 
