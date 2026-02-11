@@ -931,7 +931,13 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                        <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator" action="mail.php">
+                        <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="09848229-e920-4e8b-8d07-79d637e3f080">
+                            <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
+                            <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                            <!-- Honeypot spam protection -->
+                            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;">
+                            
                             <div id="msgSubmit" class="h3 text-center hidden"></div>
                             <div class="row">
                                 <div class="col-md-6 col-sm-12">
@@ -968,7 +974,7 @@
                     </div>
                     <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                         <div class="text-left text-xs-center">
-                            <p class="copy">&copy; 2022 Sandip Thapa</p>
+                            <p class="copy">&copy; <span id="currentYear"></span> Sandip Thapa</p>
                         </div>
                     </div>
                 </div>
@@ -1105,6 +1111,11 @@
             </ul>
         </div>
     </div> -->
+    
+    <!-- Update current year dynamically -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

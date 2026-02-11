@@ -343,26 +343,43 @@
        });
     
         function submitForm(){
-          var name = $("#name").val();
-          var email = $("#email").val();
-          var message = $("#message").val();
-          $.ajax({
-              type: "POST",
-              url: "process.php",
-              data: "name=" + name + "&email=" + email + "&message=" + message,
-              success : function(text){
-                  if (text == "success"){
-                      formSuccess();
+            var submitBtn = $("#contactForm").find('input[type="submit"]');
+            var originalBtnText = submitBtn.val();
+            
+            // Disable submit button and show loading state
+            submitBtn.prop('disabled', true).val('Sending...');
+            
+            // Hide previous messages
+            $("#msgSubmit").addClass('hidden');
+            
+            // Serialize form data - this automatically handles all form fields including hidden ones
+            // The botcheck field will be included only if checked (which should never happen)
+            var formData = $("#contactForm").serialize();
+            
+            $.ajax({
+                type: "POST",
+                url: "https://api.web3forms.com/submit",
+                data: formData,
+                dataType: "json",
+                success: function(response){
+                    if (response.success) {
+                        formSuccess();
                     } else {
-                      formError();
-                      submitMSG(false,text);
+                        formError();
+                        submitMSG(false, response.message || "Error sending message. Please try again.");
                     }
+                    submitBtn.prop('disabled', false).val(originalBtnText);
+                },
+                error: function(xhr, status, error){
+                    formError();
+                    submitMSG(false, "Error sending message. Please try again.");
+                    submitBtn.prop('disabled', false).val(originalBtnText);
                 }
             });
         }
         function formSuccess(){
             $("#contactForm")[0].reset();
-            submitMSG(true, "Message Sent!")
+            submitMSG(true, "Message Sent Successfully!")
         }
     	  function formError(){   
     	    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -375,7 +392,7 @@
           } else {
             var msgClasses = "h3 text-center shake animated text-danger";
           }
-          $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+          $("#msgSubmit").removeClass('hidden').removeClass().addClass(msgClasses).text(msg);
         }
     
 
